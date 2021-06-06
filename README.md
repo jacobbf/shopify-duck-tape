@@ -17,7 +17,10 @@ Features:
 4. Using Themekit start a [new theme](https://shopify.dev/tools/theme-kit/getting-started#step-5-create-a-new-theme) or [get an existing one](https://shopify.dev/tools/theme-kit/getting-started#step-3-connect-to-an-existing-theme).
 5. `cd ../` back out to the root and run `npm run dev` to start developing your theme.
 6. You're good to go ✨
-7. *Bonus step*: move your environment variables into a `variables` to excluded them from git. [See reference](https://shopify.dev/tools/theme-kit/configuration-reference#environment-variables).
+
+Remember to update your script tag and stylesheet link to look for your built files! Named `/index.css` and `/index.js` by default.
+
+*Bonus step*: move your environment variables into a `variables` to excluded them from git. [See reference](https://shopify.dev/tools/theme-kit/configuration-reference#environment-variables).
 
 ## Commands 
 ```
@@ -34,5 +37,5 @@ Builds CSS and JS then pushes everything inside `src` to Shopify using the [Them
 - Configure [Postcss](https://postcss.org/) in `postcss.config.js`
 - Configure [esbuild](https://esbuild.github.io/) in `esbuild.config.js`
 - Edit your templates in `src`
-- Write CSS in `src/styles`, this builds to `src/assets`
-- Write JS in `src/scripts`, this also builds to `src/assets`
+- Write CSS in `src/styles`, this builds to `src/assets/index.css`
+- Write JS in `src/scripts`, this builds to `src/assets/index.js`
