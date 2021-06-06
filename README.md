@@ -1,5 +1,5 @@
 # Shopify Duck Tape
-A quick, messy, set of node scripts for Shopify development in the year of our lord two thousand and twenty one. This is really just the simplest wrapper around Themekit I could implement on the job.
+A quick, messy, set of node scripts for Shopify development in this, the year of our lord two thousand and twenty one. This is really just the simplest wrapper around Themekit I could implement on the job.
 
 Features:
 - esbuild for snappy bundling.
