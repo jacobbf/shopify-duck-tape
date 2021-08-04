@@ -4,14 +4,7 @@
   "description": "A wrapper around Shopify Themekit.",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development npm run css:watch & npm run js:watch & npm run theme:dev",
-    "deploy": "NODE_ENV=production npm run css:build && npm run js:build && npm run theme:deploy",
-    "theme:dev": "cd src && theme open && theme watch --allow-live",
-    "theme:deploy": "cd src && theme deploy --allow-live",
-    "css:build": "node build/postcss.js",
-    "css:watch": "watch 'npm run css:build' src/styles",
-    "js:build": "node build/esbuild.js",
-    "js:watch": "watch 'npm run js:build' src/scripts",
+    "dev": "NODE_ENV=development node build/ducktape.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -22,6 +15,6 @@
     "esbuild": "^0.9.7",
     "postcss": "^8.2.13",
     "postcss-import": "^14.0.1",
-    "watch": "^1.0.2"
+    "chokidar": "^3.5.2"
   }
 }
